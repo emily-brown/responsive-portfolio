@@ -11,6 +11,7 @@ body {
 header {
     position: relative;
     margin: auto;
+    height: 70px;
     background: white;
     border-bottom: 2px solid #cccccc;
 }
@@ -29,18 +30,16 @@ h1 {
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 80%;
-    position: relative;
-    left: 163px;
+    padding: 20px;
+    position: fixed;
+    left: 12.5%;
 }
 
 ul {
     list-style-type: none;
     position: relative;
-    right: 80px;
-    top: -40px;
+    right: 6%;
+    top: 35px;
     margin: 0;
     padding: 0px 80px;
     background-color: #ffffff;
@@ -64,16 +63,13 @@ a:hover {
 }
 
 section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
     background-color: #ffffff;
-    width: 960px;
-    height: auto;
-    margin: auto;
     border: 2px solid #ebebeb;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    margin-top: 20px;   
 }
 
 .title {
@@ -83,12 +79,13 @@ section {
     font-size: 26px;
     font-weight: bold;
     float: left;
-    position: relative;
-    top: -15px;
-    margin: 20px;
-    padding: 20px;
-    border-bottom: 3px solid #ebebeb;
-    width: 920px;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border-bottom: 3px solid #ebebeb; 
+
 }
 
 #container {
@@ -116,7 +113,7 @@ form {
     font-size: 16px;
     float: inline-start;
     margin: 20px;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 input[type=text] {
@@ -124,7 +121,7 @@ input[type=text] {
     padding: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    margin-top: 6px;
+    margin-top: 10px;
     margin-bottom: 12px;
   }
 
@@ -200,4 +197,47 @@ footer {
     background-color: #666666;
     text-align: center;
     border-top: 8px solid #4aaaa5;
+  }
+
+@media only screen and (max-width: 980px) {
+    header {
+        width: 100%;
+    }
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    
+    section {
+        width: 100%;
+    }
 }
+
+@media only screen and (max-width: 640px) {
+    header {
+        height: 120px;
+    }
+    .Name {
+        width: 100%;
+        margin-left: -80px;
+    }
+    ul {
+        width: 100%;
+        float: center;
+        right: 117px;
+    }
+    li {
+        float: center;
+        padding-top: 26%;
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+
+    section {
+        width: 90%;
+    }
+}
+ 
