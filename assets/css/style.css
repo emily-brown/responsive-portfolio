@@ -66,7 +66,8 @@ section {
     max-width: 960px;
     margin: 0 auto;
     clear: both;
-    margin-top: 20px;   
+    margin-top: 20px; 
+    justify-content: flex-start; 
 }
 
 .title {
@@ -86,17 +87,18 @@ section {
 }
 
 #container {
-    display: inline;
-    margin-left: 20px;
-    margin-top: -2%;
+    float: left;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-bottom: 2%;
 }
 
 p {
-    display: inline;
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 1.6;
-    width: 70%;
+    margin: 2%;
 }
 
 form {
@@ -136,6 +138,12 @@ input[placeholder] {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     font-size: 12px;
+}
+
+#gallery {
+    display: inline-flex;
+    justify-content: center;
+    flex-flow: wrap;
 }
 
 .placeholder {
@@ -181,15 +189,28 @@ input[placeholder] {
 }
 
 footer {
-    position: fixed;
-    bottom:0;
-    left: 0;
+    position: absolute;
+    /* bottom:0; */
+    /* left: 0; */
+    top: 100%;
     width: 100%;
     height: 60px;
     background-color: #666666;
     text-align: center;
     border-top: 8px solid #4aaaa5;
   }
+
+#portfolio-footer {
+    position: absolute;
+    /* bottom:0; */
+    /* left: 0; */
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    background-color: #666666;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+}
 
 @media only screen and (max-width: 640px) {
     header {
@@ -198,6 +219,10 @@ footer {
 
     section {
         width: 85%;
+    }
+
+    #portfolio-footer {
+       top: 150%;
     }
 }
 
@@ -209,6 +234,10 @@ footer {
     section {
         width: 85%;
     }
+
+    #portfolio-footer {
+        top: 150%;
+     }
 }
 
 @media only screen and (max-width: 980px) {
